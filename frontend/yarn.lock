@@ -8626,6 +8626,7 @@ __metadata:
     axios: "npm:^1.6.5"
     bootstrap: "npm:^5.3.2"
     chart.js: "npm:^4.4.8"
+    date-fns: "npm:^4.1.0"
     dayjs: "npm:^1.11.13"
     esbuild: "npm:^0.25.2"
     eslint: "npm:^8.45.0"

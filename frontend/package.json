@@ -33,6 +33,7 @@
     "axios": "^1.6.5",
     "bootstrap": "^5.3.2",
     "chart.js": "^4.4.8",
+    "date-fns": "^4.1.0",
     "dayjs": "^1.11.13",
     "esbuild": "^0.25.2",
     "fabric": "^6.6.4",
