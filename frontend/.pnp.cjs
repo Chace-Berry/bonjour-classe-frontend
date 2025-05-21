@@ -27,6 +27,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@babel/runtime", "npm:7.27.1"],\
           ["@ckeditor/ckeditor5-build-classic", "npm:44.3.0"],\
           ["@ckeditor/ckeditor5-core", "npm:45.1.0"],\
           ["@ckeditor/ckeditor5-editor-multi-root", "npm:45.1.0"],\
@@ -55,7 +56,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.9.0"],\
           ["bootstrap", "virtual:d611446f3542de8cda501274ca4d1a8e2ce99cf952d4f9e611ddffdda80abd1b33427938fa06a703bffec5dd406e5fe6ac208998c5c3706808103686daf01cf4#npm:5.3.6"],\
           ["chart.js", "npm:4.4.9"],\
-          ["date-fns", "npm:4.1.0"],\
+          ["date-fns", "npm:2.30.0"],\
           ["dayjs", "npm:1.11.13"],\
           ["esbuild", "npm:0.19.12"],\
           ["eslint", "npm:8.57.1"],\
@@ -2121,7 +2122,7 @@ const RAW_RUNTIME_STATE =
           ["@date-io/date-fns", "virtual:5aa64ccc190cb1db8d3c585b872b983e856d40a6cd5f39cb583f9bf34933e2183d3aafc0fd10c653e003c0c58674904b137d0905ad7d6b91a7b99cb7d7a850b4#npm:2.17.0"],\
           ["@date-io/core", "npm:2.17.0"],\
           ["@types/date-fns", null],\
-          ["date-fns", "npm:4.1.0"]\
+          ["date-fns", "npm:2.30.0"]\
         ],\
         "packagePeers": [\
           "@types/date-fns",\
@@ -3363,7 +3364,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.3.22"],\
           ["@types/react-dom", "virtual:d611446f3542de8cda501274ca4d1a8e2ce99cf952d4f9e611ddffdda80abd1b33427938fa06a703bffec5dd406e5fe6ac208998c5c3706808103686daf01cf4#npm:18.3.7"],\
           ["clsx", "npm:1.2.1"],\
-          ["date-fns", "npm:4.1.0"],\
+          ["date-fns", "npm:2.30.0"],\
           ["dayjs", "npm:1.11.13"],\
           ["luxon", null],\
           ["moment", "npm:2.30.1"],\
@@ -5100,6 +5101,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["date-fns", [\
+      ["npm:2.30.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/date-fns-npm-2.30.0-895c790e0f-10c0.zip/node_modules/date-fns/",\
+        "packageDependencies": [\
+          ["date-fns", "npm:2.30.0"],\
+          ["@babel/runtime", "npm:7.27.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:4.1.0", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/date-fns-npm-4.1.0-764604ee0f-10c0.zip/node_modules/date-fns/",\
         "packageDependencies": [\
@@ -10537,6 +10546,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["your-project", "workspace:."],\
+          ["@babel/runtime", "npm:7.27.1"],\
           ["@ckeditor/ckeditor5-build-classic", "npm:44.3.0"],\
           ["@ckeditor/ckeditor5-core", "npm:45.1.0"],\
           ["@ckeditor/ckeditor5-editor-multi-root", "npm:45.1.0"],\
@@ -10565,7 +10575,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.9.0"],\
           ["bootstrap", "virtual:d611446f3542de8cda501274ca4d1a8e2ce99cf952d4f9e611ddffdda80abd1b33427938fa06a703bffec5dd406e5fe6ac208998c5c3706808103686daf01cf4#npm:5.3.6"],\
           ["chart.js", "npm:4.4.9"],\
-          ["date-fns", "npm:4.1.0"],\
+          ["date-fns", "npm:2.30.0"],\
           ["dayjs", "npm:1.11.13"],\
           ["esbuild", "npm:0.19.12"],\
           ["eslint", "npm:8.57.1"],\
