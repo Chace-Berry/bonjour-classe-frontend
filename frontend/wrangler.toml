@@ -1,0 +1,9 @@
+name = "bonjour-classe-worker"
+main = "src/main.jsx"
+type = "javascript"
+account_id = "240d1d46d6745fbbba807dcb4008d609"
+workers_dev = true
+
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
