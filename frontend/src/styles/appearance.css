@@ -1,0 +1,428 @@
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+body.dark-mode .header#shownotification {
+  color:#000000 !important;
+}
+body.dark-mode .card,
+body.dark-mode .appearance-setting-container {
+  background-color: #2a2a2a !important;
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body.dark-mode .nav-button {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode button:not(.btn-primary):not(.btn-success):not(.btn-danger) {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body.dark-mode .table {
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
+}
+
+/* Improve dark mode targeting for sidebar and header */
+body.dark-mode header,
+body.dark-mode .navbar,
+body.dark-mode nav,
+body.dark-mode .header {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
+}
+
+/* Add these styles to fix header in dark mode */
+body.dark-mode header,
+body.dark-mode .header,
+body.dark-mode [style*="backgroundColor: \"#ffffff\""] {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Fix for the fixed header causing white rectangle */
+body.dark-mode div[style*="position: \"fixed\""] {
+  background-color: #121212 !important;
+  background-color: rgb(255 255 255 / 0%)!important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode .sidebar,
+body.dark-mode aside,
+body.dark-mode .side-nav,
+body.dark-mode [class*="sidebar"],
+body.dark-mode [id*="sidebar"] {
+  background-color: #232323 !important; /* lighter gray */
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
+}
+/* Ensure text and icons are visible in dark mode */
+body.dark-mode .sidebar .nav-link,
+body.dark-mode .sidebar i.bi,
+body.dark-mode aside .nav-link,
+body.dark-mode aside i.bi {
+  color: #e0e0e0 !important;
+}
+
+/* Fix hover effects in dark mode */
+body.dark-mode .sidebar .nav-link:hover,
+body.dark-mode aside .nav-link:hover {
+  background-color: #333 !important;
+  color: #ffffff !important;
+}
+
+/* Make icons change color on hover in dark mode */
+body.dark-mode .sidebar .nav-link:hover i.bi,
+body.dark-mode aside .nav-link:hover i.bi {
+  color: #ffffff !important;
+}
+
+/* Style for active link in dark mode */
+body.dark-mode .sidebar .nav-link.active,
+body.dark-mode aside .nav-link.active {
+  background-color: #9d0000 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .sidebar .nav-link.active i.bi,
+body.dark-mode aside .nav-link.active i.bi {
+  color: #ffffff !important;
+}
+
+body.dark-mode .sidebar a,
+body.dark-mode .sidebar button,
+body.dark-mode aside a,
+body.dark-mode aside button {
+  color: #e0e0e0 !important;
+  background-color: transparent !important;
+}
+
+body.dark-mode .sidebar a:hover,
+body.dark-mode .sidebar button:hover,
+body.dark-mode aside a:hover,
+body.dark-mode aside button:hover {
+  background-color: #333 !important;
+}
+
+/* Preserve hover effects */
+.dark-mode .card:hover,
+.dark-mode .btn:hover:not(.btn-primary):not(.btn-secondary):not(.btn-success):not(.btn-danger),
+.dark-mode a:hover {
+  /* Original hover color with slightly brightened version for dark mode */
+  background-color: #333 !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+
+/* Leave any existing hover transitions intact */
+*[style*="transition"] {
+  transition: all 0.3s ease !important;
+}
+
+/* Ensure styles persist after page reload */
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode).dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+  }
+}
+
+/* Add styles for calendar in dark mode */
+body.dark-mode .calendar-component,
+body.dark-mode [class*="calendar"],
+body.dark-mode [class*="Calendar"] {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .calendar-day,
+body.dark-mode [class*="daySelected"],
+body.dark-mode [class*="dayOutsideMonth"] {
+  background-color: #333 !important;
+  color: #e0e0e0 !important;
+  border-color: #555 !important;
+}
+
+body.dark-mode [style*="backgroundColor: \"#ffcccc\""] {
+  background-color: #7a3030 !important; /* Darker red for events in dark mode */
+}
+
+/* Density Styles */
+body[data-density="compact"] .form-control,
+body[data-density="compact"] .form-select,
+body[data-density="compact"] .btn,
+body[data-density="compact"] .card-body {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+body[data-density="compact"] .nav-link,
+body[data-density="compact"] .dropdown-item {
+  padding: 0.25rem 0.5rem;
+}
+
+body[data-density="compact"] .table td,
+body[data-density="compact"] .table th {
+  padding: 0.25rem 0.5rem;
+}
+
+body[data-density="comfortable"] .form-control,
+body[data-density="comfortable"] .form-select,
+body[data-density="comfortable"] .btn,
+body[data-density="comfortable"] .card-body {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+}
+
+/* High Contrast Mode */
+body.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast .btn-primary {
+  background-color: #ffff00;
+  color: #000;
+  border-color: #ffff00;
+}
+
+body.high-contrast a {
+  color: #ffff00;
+}
+
+body.dark-mode header,
+body.dark-mode .header,
+body.dark-mode .navbar,
+body.dark-mode nav {
+  background-color: #232323 !important; /* lighter gray */
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
+}
+
+body.dark-mode .settings-nav,
+body.dark-mode .profile-nav,
+body.dark-mode .settings-sidebar,
+body.dark-mode .profileContainer > div[style*="background-color: #f8f9fa"] {
+  background-color: #232323 !important;
+  border-right: 1px solid #333 !important;
+}
+
+body.dark-mode .settings-nav button,
+body.dark-mode .profile-nav button,
+body.dark-mode .settings-sidebar button,
+body.dark-mode .profileContainer > div[style*="background-color: #f8f9fa"] button {
+  background-color: #232323 !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+}
+
+body.dark-mode .settings-nav button.active,
+body.dark-mode .profile-nav button.active,
+body.dark-mode .settings-sidebar button.active,
+body.dark-mode .profileContainer > div[style*="background-color: #f8f9fa"] button.active {
+  background-color: #007bff !important;
+  color: #fff !important;
+}
+
+body.dark-mode .settings-nav {
+  background: #232323 !important;
+  border-right: 1px solid #333 !important;
+}
+body.dark-mode .settings-nav-btn {
+  background: #232323 !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+}
+body.dark-mode .settings-nav-btn.active {
+  background: #007bff !important;
+  color: #fff !important;
+}
+
+/* Settings nav styles (light mode) */
+.settings-nav {
+  width: 250px;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settings-nav-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-align: left;
+  border: none;
+  border-radius: 4px;
+  background: #e9ecef;
+  color: #000;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.settings-nav-btn.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.settings-nav-btn:hover:not(.active) {
+  background: #d0d7de;
+  color: #000;
+}
+
+/* Dark mode overrides */
+body.dark-mode .settings-nav {
+  background: #121212 !important;
+  border-right: 1px solid #333 !important;
+}
+body.dark-mode .settings-nav-btn {
+  background: #121212 !important;
+  color: #e0e0e0 !important;
+}
+body.dark-mode .settings-nav-btn.active {
+  background: #007bff !important;
+  color: #fff !important;
+}
+body.dark-mode .settings-nav-btn:hover:not(.active) {
+  background: #333 !important;
+  color: #fff !important;
+}
+
+/* Clear any existing rules for lecture popup and add these new selectors */
+
+/* Target the exact DOM structure in all cases */
+.lecture-popup .lecture-popup {
+  background-color: #fff !important;
+}
+
+/* Handle dark mode with highest specificity */
+body.dark-mode .lecture-popup .lecture-popup.dark {
+  background-color: #121212 !important;
+}
+
+/* Force the selector with !important for extra certainty */
+.lecture-popup.dark {
+  background-color: #121212 !important;
+}
+
+/* Base styling for all popups and inner popup containers */
+.lecture-popup, .popup, .add-more-popup, .cart-popup, .checkout-popup,
+.lecture-popup > div, .popup > div, .add-more-popup > div, .cart-popup > div, .checkout-popup > div {
+  background-color: #fff;
+}
+
+/* Dark mode styling for all popups and inner popup containers */
+body.dark-mode .lecture-popup .dark,
+body.dark-mode .popup .dark,
+body.dark-mode .add-more-popup .dark,
+body.dark-mode .cart-popup .dark,
+body.dark-mode .checkout-popup .dark {
+  background-color: #121212 !important;
+}
+
+/* Direct targeting for the most specific case - lecture popup */
+body.dark-mode .lecture-popup > .lecture-popup.dark {
+  background-color: #121212 !important;
+}
+
+/* Dark mode styling for notifications */
+body.dark-mode .shownotification {
+  background-color: #2a2a2a !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #444 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Style notification links in dark mode */
+body.dark-mode .shownotification a {
+  color: #8cb4ff !important;
+}
+
+/* Style notification headers in dark mode */
+body.dark-mode .shownotification h5,
+body.dark-mode .shownotification h6 {
+  color: #000000 !important;
+}
+
+/* Higher specificity selector to override Bootstrap */
+body.dark-mode .dropdown-menu.notification-dark-mode-fix.shownotification {
+  background-color: #2a2a2a !important;
+}
+
+/* For light mode */
+.dropdown-menu.notification-dark-mode-fix.shownotification {
+  background-color: #fff !important;
+}
+
+/* Super high specificity selectors for notification dropdown */
+html body.dark-mode .dropdown-menu.notification-dark-mode-fix.shownotification, 
+html body.dark-mode div.dropdown-menu.notification-dark-mode-fix.shownotification,
+html body.dark-mode div[class*="dropdown-menu"][class*="shownotification"],
+.dropdown-menu.shownotification[style],
+body.dark-mode .shownotification.dropdown-menu {
+  background-color: #2a2a2a !important;
+  color: #e0e0e0 !important;
+  display: block !important; /* Override display:none */
+}
+
+/* Light mode version with equally high specificity */
+html body:not(.dark-mode) .dropdown-menu.notification-dark-mode-fix.shownotification,
+html body:not(.dark-mode) div.dropdown-menu.notification-dark-mode-fix.shownotification,
+.dropdown-menu.shownotification:not([data-bs-theme="dark"]) {
+  background-color: #fff !important;
+  display: block !important;
+}
+
+/* Animations for dashboard refresh notification */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply animations for any elements that use them */
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}

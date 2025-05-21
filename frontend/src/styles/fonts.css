@@ -1,0 +1,13 @@
+/* Font definitions */
+@font-face {
+  font-family: 'Atop';
+  src: url('../assets/Atop.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font utility classes */
+.atop-font {
+  font-family: 'Atop', sans-serif !important;
+}
