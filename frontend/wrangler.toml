@@ -2,6 +2,7 @@ name = "bonjour-classe-worker"
 main = "workers-site/index.js"
 account_id = "240d1d46d6745fbbba807dcb4008d609"
 workers_dev = true
+compatibility_date = "2025-05-22"
 
 [site]
 bucket = "./dist"
